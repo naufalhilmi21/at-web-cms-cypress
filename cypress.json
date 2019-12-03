@@ -1,0 +1,11 @@
+{
+  "baseUrl": "http://admin.stg.cariparkir.co.id",
+  "projectId": "4pi283",
+  "reporter": "mochawesome",
+  "reporterOptions": {
+    "overwrite": false,
+    "html": false,
+    "json": true
+  },
+  "screenshotsFolder": "mochawesome-report/assets"
+}
