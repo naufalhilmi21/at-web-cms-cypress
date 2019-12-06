@@ -1,0 +1,107 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2019-12-03T10:44:40.830Z",
+    "end": "2019-12-03T10:44:47.370Z",
+    "duration": 6540,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "d1447b9c-1c3f-4b3d-8eae-1ba93a5eee2d",
+      "title": "",
+      "fullFile": "",
+      "file": "",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "e00d9919-45c0-4467-9326-c4e0a5a2d97c",
+          "title": "Login CMS Admin --Positive Case",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Login with correct username and pasword then enter to login",
+              "fullTitle": "Login CMS Admin --Positive Case Login with correct username and pasword then enter to login",
+              "timedOut": null,
+              "duration": 6470,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('/#/login');\ncy.get('input[ng-model=\"crendetial.usename\"]').get('input[placeholder=\"Password\"]'); // expect(cy.url()).to.include('/dashboard/user-consumer');\ncy.log('test');",
+              "err": {
+                "message": "CypressError: Timed out retrying: Expected to find element: 'input[ng-model=\"crendetial.usename\"]', but never found it.",
+                "estack": "CypressError: Timed out retrying: Expected to find element: 'input[ng-model=\"crendetial.usename\"]', but never found it.\n    at Object.cypressErr (http://admin.stg.cariparkir.co.id/__cypress/runner/cypress_runner.js:105262:11)\n    at Object.throwErr (http://admin.stg.cariparkir.co.id/__cypress/runner/cypress_runner.js:105217:18)\n    at Object.throwErrByPath (http://admin.stg.cariparkir.co.id/__cypress/runner/cypress_runner.js:105249:17)\n    at retry (http://admin.stg.cariparkir.co.id/__cypress/runner/cypress_runner.js:96526:16)\n    at onFailFn (http://admin.stg.cariparkir.co.id/__cypress/runner/cypress_runner.js:85591:16)\n    at tryCatcher (http://admin.stg.cariparkir.co.id/__cypress/runner/cypress_runner.js:139407:23)\n    at Promise._settlePromiseFromHandler (http://admin.stg.cariparkir.co.id/__cypress/runner/cypress_runner.js:137343:31)\n    at Promise._settlePromise (http://admin.stg.cariparkir.co.id/__cypress/runner/cypress_runner.js:137400:18)\n    at Promise._settlePromise0 (http://admin.stg.cariparkir.co.id/__cypress/runner/cypress_runner.js:137445:10)\n    at Promise._settlePromises (http://admin.stg.cariparkir.co.id/__cypress/runner/cypress_runner.js:137520:18)\n    at Async../node_modules/bluebird/js/release/async.js.Async._drainQueue (http://admin.stg.cariparkir.co.id/__cypress/runner/cypress_runner.js:134132:16)\n    at Async../node_modules/bluebird/js/release/async.js.Async._drainQueues (http://admin.stg.cariparkir.co.id/__cypress/runner/cypress_runner.js:134142:10)\n    at Async.drainQueues (http://admin.stg.cariparkir.co.id/__cypress/runner/cypress_runner.js:134016:14)",
+                "diff": null
+              },
+              "uuid": "6855d0f9-ca08-44ec-bfaa-4103d54b5d0b",
+              "parentUUID": "e00d9919-45c0-4467-9326-c4e0a5a2d97c",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "6855d0f9-ca08-44ec-bfaa-4103d54b5d0b"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 6470,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "5.2.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false
+      },
+      "version": "4.1.0"
+    },
+    "marge": {
+      "options": {
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "4.0.1"
+    }
+  }
+}

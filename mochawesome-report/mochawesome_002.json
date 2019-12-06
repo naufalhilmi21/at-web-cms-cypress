@@ -1,0 +1,103 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2019-12-03T10:44:27.322Z",
+    "end": "2019-12-03T10:44:28.536Z",
+    "duration": 1214,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "0a00923b-7490-43cf-8879-ad6a57417774",
+      "title": "",
+      "fullFile": "",
+      "file": "",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "36f3cfe5-7f96-4a54-98ce-1f190534653c",
+          "title": "Login CMS Admin --Positive Case",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Login with correct username and pasword then enter to login",
+              "fullTitle": "Login CMS Admin --Positive Case Login with correct username and pasword then enter to login",
+              "timedOut": null,
+              "duration": 1163,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('/#/login');\ncy.get('input[ng-model=\"crendetial.username\"]').get('input[placeholder=\"Password\"]'); // expect(cy.url()).to.include('/dashboard/user-consumer');\ncy.log('test');",
+              "err": {},
+              "uuid": "9de3978a-a464-4a00-a85e-b37552e69c9e",
+              "parentUUID": "36f3cfe5-7f96-4a54-98ce-1f190534653c",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "9de3978a-a464-4a00-a85e-b37552e69c9e"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 1163,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "5.2.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false
+      },
+      "version": "4.1.0"
+    },
+    "marge": {
+      "options": {
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "4.0.1"
+    }
+  }
+}
